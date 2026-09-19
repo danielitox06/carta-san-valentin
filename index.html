@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Eliza ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Pantalla inicial -->
+    <section id="inicio" class="pantalla activa">
+
+        <div class="estrellas"></div>
+
+        <div class="inicio-contenido">
+
+            <p class="pequeno">Tengo algo que decirte...</p>
+
+            <h1>Feliz día de san Valentín!</h1>
+
+            <p class="subtitulo">
+                Una pequeña sorpresa hecha especialmente para ti.
+            </p>
+
+            <button class="boton-principal" onclick="abrirCarta()">
+                Abrir mi carta 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sobre -->
+    <section id="sobre-pantalla" class="pantalla">
+
+        <div class="sobre-container">
+
+            <div class="sobre" id="sobre" onclick="abrirSobre()">
+
+                <div class="sobre-tapa"></div>
+
+                <div class="sobre-cuerpo"></div>
+
+                <div class="carta-pequena">
+                    <span>Mira jeje❤️</span>
+                </div>
+
+                <div class="sello">♥</div>
+
+            </div>
+
+            <p class="texto-sobre">
+                Haz clic sobre el sobre...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Carta -->
+    <section id="carta-pantalla" class="pantalla">
+
+        <div class="carta">
+
+            <div class="carta-header">
+
+                <span class="corazon">♥</span>
+
+                <p>Para Eliza a la distancia :3</p>
+
+                <span class="corazon">♥</span>
+
+            </div>
+
+            <div class="carta-contenido">
+
+                <p class="saludo">
+                    Cielo:
+                </p>
+
+                <p>
+                    No sé exactamente en qué momento te convertiste
+                    en una persona tan importante para mí, pero sí sé
+                    que desde que llegaste a mi vida, muchas cosas
+                    empezaron a sentirse diferentes.
+                </p>
+
+                <p>
+                    Hemos vivido momentos increíbles, momentos
+                    difíciles, risas, discusiones, abrazos, cambios
+                    y recuerdos que guardo con muchísimo cariño.
+                </p>
+
+                <p>
+                    Y si algo he aprendido de todo este tiempo es que
+                    hay personas que simplemente dejan una huella
+                    diferente en nuestro corazón.
+                </p>
+
+                <p>
+                    Tú eres una de esas personas para mí.
+                </p>
+
+                <p>
+                    Tal vez no siempre encuentro las palabras correctas
+                    para decirte todo lo que siento, pero quiero que
+                    sepas que te quiero muchísimo y que cada momento
+                    contigo ha significado algo para mí.
+                </p>
+
+                <p class="especial">
+                    Gracias por formar parte de mi historia.
+                    ❤️
+                </p>
+
+                <p class="firma">
+                    Con todo mi amor,<br>
+                    <strong>Daniel</strong>
+                </p>
+
+            </div>
+
+            <button class="boton-secundario" onclick="mostrarRecuerdos()">
+                Seguir leyendo ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Recuerdos -->
+    <section id="recuerdos-pantalla" class="pantalla">
+
+        <div class="recuerdos">
+
+            <p class="pequeno">Algunos de mis recuerdos favoritos de...</p>
+
+            <h2>Nosotros ❤️</h2>
+
+            <div class="galeria">
+
+                <div class="foto">
+                    <img src="fotos/foto1.jpeg" alt="Nuestro recuerdo 1">
+                    <div class="foto-texto">
+                        Te acuerdas de esta foto?
+                    </div>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto2.jpeg" alt="Nuestro recuerdo 2">
+                    <div class="foto-texto">
+                        Un beso de estos porfa
+                    </div>
+                </div>
+
+                <div class="foto">
+                    <img src="fotos/foto3.jpeg" alt="Nuestro recuerdo 3">
+                    <div class="foto-texto">
+                        La foto que siempre recordaré
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="boton-principal" onclick="mostrarFinal()">
+                Hay algo más... ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pantalla final -->
+    <section id="final-pantalla" class="pantalla">
+
+        <div class="final">
+
+            <div class="gran-corazon">
+                ❤️
+            </div>
+
+            <p class="pequeno">
+                Y después de todo...
+            </p>
+
+            <h2>
+                ¿Sabes qué es lo que más quiero hoy?
+            </h2>
+
+            <p class="final-texto">
+                Seguir creando recuerdos contigo, seguir riéndonos, seguir aprendiendo juntos, seguir viviendo momentos que algún día podamos recordar con una sonrisa.
+            </p>
+
+            <p class="final-frase">
+                Porque mi parte favorita de nuestra historia
+                todavía no está escrita.
+            </p>
+
+            <button class="boton-amor" onclick="lluviaDeCorazones()">
+                Quiero seguir escribiéndola contigo ❤️
+            </button>
+
+            <div id="respuesta" class="respuesta">
+                Te quiero muchísimo. ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contenedor de corazones -->
+    <div id="corazones-container"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
